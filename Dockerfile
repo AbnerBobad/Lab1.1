@@ -1,4 +1,2 @@
-FROM node:20 
-WORKDIR /app
-COPY . .
-CMD ["node", "src/app.js"]
+FROM nginx:latest
+COPY src /usr/share/nginx/html
